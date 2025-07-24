@@ -31,12 +31,15 @@ This repository provides a robust, production-ready monitoring stack for AWS EC2
 
 ```text
 .
-├── main.tf                  # Main Terraform configuration
-├── variables.tf             # Input variables
-├── outputs.tf               # Terraform outputs (Grafana URL, IPs, etc.)
-├── prometheus_grafana.tpl   # User data template for Prometheus & Grafana setup
-├── node_exporter.tpl        # User data template for Node Exporter setup
-├── README.md                # Project documentation
+├── terraform/                  # All Terraform configuration files and templates
+│   ├── main.tf                 # Main Terraform configuration
+│   ├── variables.tf            # Input variables
+│   ├── outputs.tf              # Terraform outputs (Grafana URL, IPs, etc.)
+│   ├── prometheus_grafana.tpl  # User data template for Prometheus & Grafana setup
+│   ├── node_exporter.tpl       # User data template for Node Exporter setup
+├── Screenshots/                # Screenshots of project
+├── stress-test/                # Stress testing scripts and resources
+└──Readme.MD                    # Readme file
 ```
 
 ---
